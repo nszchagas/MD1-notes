@@ -1,0 +1,81 @@
+\documentclass[13pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Lista 2 de Matemática Discreta}
+\author{Nicolas Chagas Souza}	
+\date{\today}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{0.5}
+
+
+
+
+\begin{document}
+\maketitle
+
+
+
+\begin{enumerate}
+
+	\item[1)] 
+   \end{enumerate}
+   
+    \begin{enumerate}
+    \item[a)] $\sum\limits_{i=1}^{n} i^3 = \frac{n^2(n+1)^2}{4}  $
+	\end{enumerate}
+	Hipótese indutiva: 
+	\begin{center}
+	$1^3=\frac{1^2(1+1)^2}{4} $
+	$1 = \frac{4}{4} $ 
+	$1=1$
+	\end{center}	
+	Então a propriedade é válida para $i = 1$.	
+	Suponha agora que a propriedade seja válida para $i = k$, temos:
+	
+	$\sum\limits_{i=1}^{k} i^3 = \frac{k^2(k+1)^2}{4}  $
+	
+	Precisamos verificar se a propriedade é válida para $k+1$:
+	\begin{center}
+	
+	
+	$\sum\limits_{i=1}^{k+1} i^3 $ 
+
+	
+	$\sum\limits_{i=1}^{k} i^3 + (k+1)^3$
+	\end{center}
+	Pela hipótese indutiva:
+	\begin{center}
+	$ \frac{k^2(k+1)^2}{4} + (k+1)^3 $ 
+	
+	$ \frac{k^2(k+1)^2+4(k+1)^3}{4}  $
+
+	$ \frac{k^2(k+1)^2+4(k+1)^2(k+1)}{4} $ 
+	
+	$ \frac{k^2(k+1)^2+4(k+1)^2(k+1)}{4} $ 
+	
+	$ \frac{(k+1)^2 (k^2 + 4(k+1))}{4} $
+	
+	$ \frac{(k+1)^2 (k^2 + 4k +4))}{4} $
+	
+	$ \frac{(k+1)^2 (k+2)^2}{4} $
+	
+	$ \frac{(k+1)^2 (k+2)^2}{4} $
+	
+	$ \therefore \sum\limits_{i=1}^{k+1} i^3  = \frac{(k+1)^2 (k+2)^2}{4} $	
+	
+	\end{center}
+	
+	
+	
+	
+	
+	
+	
+	
+
+\end{document}
